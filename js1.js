@@ -52,5 +52,45 @@ function filter(is_even, fibbonnaci_set){
 console.log(filter(is_even, fibbonnaci_set(4000000)));
 */
 
-// Given an array in Javascript, write a function in Javacsript that returns any items that 
-// have duplicates. 
+/* Given an array in Javascript, write a function in Javacsript that returns any items that 
+ have duplicates. 
+
+function returnDuplicates(checkForDups){
+    var temp = [];
+    for(var i = 0; i < checkForDups.length - 1; i++){
+        for(var j = i+1; j < checkForDups.length - 1; j++){
+            if(checkForDups[i] === checkForDups[j] && temp.indexOf(checkForDups[i] < 0)){
+                temp.push(checkForDups[i]);
+            }
+        }
+    }
+    return temp;
+}
+
+var randomJunkIFound = ["katie", "true", true, 19, "gargoyles", "!", 2 + 3, "2 + 3",
+    19, "19", 19 === "19", 6, false, false];
+
+console.log(returnDuplicates(randomJunkIFound));
+*/
+
+// var cat = {
+//         fluffiness: 3000,
+//         hunger: 50,
+//         huntGame: 200,
+//         conceit: 5000,
+//         cattitude: 9000,
+//         tired: false,
+//         feed: function () {
+//             console.log("meow meow");
+//             this.hunger = this.hunger -5;
+//         },
+//         sleep: function () {
+//             console.log("zzzZzz");
+//             if(this.cattitude > 100){
+//                 sleep = true;
+//             }
+//         },
+//         pet: function () {
+//             console.log("prrrrrr");
+//         }
+// };
